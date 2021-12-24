@@ -1,0 +1,5 @@
+ubuntu:latest
+alpine:latest
+alpine:3
+alpine:3.14
+ubuntu:22.04
