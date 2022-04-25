@@ -14,5 +14,7 @@ resource "skopeo_copy" "this" {
     ]
     for_each = toset(var.image_name)
     source_image        = "docker://${var.source_registry}/${each.key}"  
-    destination_image   = "docker://${var.aws_account}.dkr.ecr.${var.aws_region}.amazonaws.com/${each.key}"
+    destination_image   = "docker://${aws_ecr_repository.this[each.key].repository_url}"
+    keep_image          = true
 }
+
