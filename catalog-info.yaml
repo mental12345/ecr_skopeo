@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ecr_skopeo
+  annotations:
+    github.com/project-slug: mental12345/ecr_skopeo
+spec:
+  type: other
+  lifecycle: unknown
+  owner: guest
